@@ -1,0 +1,41 @@
+name: Job Tracker — Daily Scrape
+
+on:
+  schedule:
+    - cron: "30 20 * * *"   # 2:00 AM IST
+    - cron: "30 8 * * *"    # 2:00 PM IST
+  workflow_dispatch:
+
+jobs:
+  run-job-tracker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run job tracker
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          AITABLE_API_TOKEN: ${{ secrets.AITABLE_API_TOKEN }}
+          DST_JOB_POSTINGS: ${{ secrets.DST_JOB_POSTINGS }}
+          DST_APPLICATIONS: ${{ secrets.DST_APPLICATIONS }}
+          DST_RESUME: ${{ secrets.DST_RESUME }}
+          DST_COMPANY_URLS: ${{ secrets.DST_COMPANY_URLS }}
+          DST_JOB_TITLES: ${{ secrets.DST_JOB_TITLES }}
+          DST_SEEN_JOBS: ${{ secrets.DST_SEEN_JOBS }}
+          SEARCH_LOCATION: India
+          MAX_JOBS_PER_TITLE_PER_BOARD: 5
+        run: python main.py
