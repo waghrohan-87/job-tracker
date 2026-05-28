@@ -1,0 +1,273 @@
+# Job Tracker — Complete Setup Guide
+# Follow these steps in order. Takes about 30–45 minutes total.
+
+═══════════════════════════════════════════════════════════
+STEP 1 — Install Python on your Mac (if not already done)
+═══════════════════════════════════════════════════════════
+
+1. Open Terminal (Applications → Utilities → Terminal)
+
+2. Check if Python is installed:
+   python3 --version
+
+3. If not installed, install it from:
+   https://www.python.org/downloads/
+   Download Python 3.11 or higher.
+
+4. Also install pip (usually comes with Python):
+   pip3 --version
+
+
+═══════════════════════════════════════════════════════════
+STEP 2 — Create a GitHub Account + Private Repo
+═══════════════════════════════════════════════════════════
+
+1. Go to https://github.com and create a free account if you don't have one.
+
+2. Click the "+" in the top right → "New repository"
+
+3. Name it: job-tracker  (or anything you like)
+
+4. Set it to PRIVATE (important — keeps your API keys safe)
+
+5. Click "Create repository"
+
+6. On the next screen, copy the repo URL — looks like:
+   https://github.com/YOUR_USERNAME/job-tracker.git
+
+
+═══════════════════════════════════════════════════════════
+STEP 3 — Put the Code on GitHub
+═══════════════════════════════════════════════════════════
+
+1. In Terminal, navigate to where you want to keep the project:
+   cd ~/Documents
+
+2. Clone the empty repo:
+   git clone https://github.com/YOUR_USERNAME/job-tracker.git
+   cd job-tracker
+
+3. Copy all the files from the job_tracker folder into this directory.
+   (The files are: main.py, requirements.txt, resume_extractor.py,
+    .gitignore, .env.example, and the folders:
+    scrapers/, ai_engine/, generators/, utils/, .github/)
+
+4. Add all files to git:
+   git add .
+
+5. Commit:
+   git commit -m "Initial setup"
+
+6. Push to GitHub:
+   git push origin main
+
+   (If asked for credentials, use your GitHub username and a Personal
+    Access Token — see: https://github.com/settings/tokens)
+
+
+═══════════════════════════════════════════════════════════
+STEP 4 — Add Your API Keys to GitHub Secrets
+═══════════════════════════════════════════════════════════
+
+GitHub Secrets store your keys securely — they're never visible in code.
+
+1. Go to your repo on GitHub
+2. Click "Settings" tab (top of repo page)
+3. In left sidebar, click "Secrets and variables" → "Actions"
+4. Click "New repository secret" for EACH of the following:
+
+   SECRET NAME              VALUE
+   ─────────────────────────────────────────────────────────
+   ANTHROPIC_API_KEY        your Anthropic API key
+                            (from console.anthropic.com → API Keys)
+
+   AITABLE_API_TOKEN        your AITable API token
+                            (from AITable → profile avatar → Developer)
+
+   DST_JOB_POSTINGS         the dst... ID for job_postings datasheet
+   DST_APPLICATIONS         the dst... ID for applications datasheet
+   DST_RESUME               the dst... ID for resume datasheet
+   DST_COMPANY_URLS         the dst... ID for company_urls datasheet
+   DST_JOB_TITLES           the dst... ID for job_titles datasheet
+   DST_SEEN_JOBS            the dst... ID for seen_jobs datasheet
+
+   To get dst IDs: open each AITable datasheet → look at the URL bar
+   URL looks like: aitable.ai/workbench/dstABCDEFGH/...
+   Copy the dstABCDEFGH part.
+
+
+═══════════════════════════════════════════════════════════
+STEP 5 — Set Up Local Environment (for one-time tasks)
+═══════════════════════════════════════════════════════════
+
+You need a local setup to run resume_extractor.py (a one-time script).
+
+1. In Terminal, go to your project folder:
+   cd ~/Documents/job-tracker
+
+2. Create a virtual environment:
+   python3 -m venv venv
+
+3. Activate it:
+   source venv/bin/activate
+
+4. Install dependencies:
+   pip install -r requirements.txt
+
+5. Copy the example env file:
+   cp .env.example .env
+
+6. Open .env in any text editor and fill in ALL the values:
+   - ANTHROPIC_API_KEY
+   - AITABLE_API_TOKEN
+   - All 6 dst... IDs
+
+   Example using nano:
+   nano .env
+
+   (Press Ctrl+X, then Y, then Enter to save)
+
+
+═══════════════════════════════════════════════════════════
+STEP 6 — Extract Your Resume Text (IMPORTANT — do this once)
+═══════════════════════════════════════════════════════════
+
+This reads your uploaded resume file from AITable, extracts the text,
+cleans it with Claude, and saves it back. The AI pipeline needs this.
+
+1. Make sure you have:
+   - Uploaded your resume PDF/Word to the `resume` datasheet in AITable
+   - Ticked the `is_active` checkbox on that row
+   - Filled in your .env file (Step 5)
+
+2. Run:
+   python resume_extractor.py
+
+3. You'll see output like:
+   "✓ Resume text extracted and saved successfully!"
+   Followed by a preview of the first 500 characters.
+
+4. Go to AITable → resume datasheet → check that the
+   extracted_text field now has content.
+
+Do this again any time you upload a new version of your resume.
+
+
+═══════════════════════════════════════════════════════════
+STEP 7 — Test a Manual Run
+═══════════════════════════════════════════════════════════
+
+Before relying on the automated schedule, do one manual test.
+
+Option A — Run locally:
+   python main.py
+
+Option B — Trigger from GitHub:
+   1. Go to your GitHub repo
+   2. Click "Actions" tab
+   3. Click "Job Tracker — Daily Scrape" in the left panel
+   4. Click "Run workflow" button (top right)
+   5. Click the green "Run workflow" button in the dropdown
+
+Watch the logs — you should see:
+   - Job titles and company URLs loaded
+   - Scrapers running board by board
+   - "Processing: [Job Title] @ [Company]"
+   - Match scores
+   - "✓ Done" confirmations
+
+Then check AITable:
+   - job_postings datasheet should have new rows
+   - applications datasheet should have rows with PDF and Word attachments
+   - seen_jobs should have hashes logged
+
+
+═══════════════════════════════════════════════════════════
+STEP 8 — Verify Automated Schedule
+═══════════════════════════════════════════════════════════
+
+The GitHub Actions workflow is set to run automatically at:
+   - 2:00 AM IST (20:30 UTC)
+   - 2:00 PM IST (08:30 UTC)
+
+No action needed — GitHub handles this. You can verify it's running by:
+1. Going to GitHub → your repo → Actions tab
+2. After the scheduled time, you'll see a run appear automatically
+
+
+═══════════════════════════════════════════════════════════
+STEP 9 — Add Company Career URLs (ongoing)
+═══════════════════════════════════════════════════════════
+
+Any time you want to add a specific company's Lever/Workable/career page:
+
+1. Go to AITable → company_urls datasheet
+2. Add a new row:
+   - company_name: e.g. "Freshworks"
+   - url: e.g. "https://jobs.lever.co/freshworks"
+   - active: tick the checkbox
+3. It will be picked up on the next scheduled run automatically.
+
+Supported URL types:
+   - Lever:      https://jobs.lever.co/companyname
+   - Workable:   https://apply.workable.com/companyname
+   - Greenhouse: https://boards.greenhouse.io/companyname
+   - Any other company careers page (best-effort HTML scrape)
+
+
+═══════════════════════════════════════════════════════════
+TROUBLESHOOTING
+═══════════════════════════════════════════════════════════
+
+"No active resume found"
+→ Go to AITable resume datasheet, make sure is_active is ticked.
+→ Run resume_extractor.py to fill the extracted_text field.
+
+"No active job titles found"
+→ Go to job_titles datasheet, make sure active is ticked on rows.
+
+"Module not found" errors
+→ Make sure virtual environment is activated: source venv/bin/activate
+→ Run: pip install -r requirements.txt
+
+GitHub Actions failing
+→ Go to Actions tab → click the failed run → read the error log
+→ Most common: a Secret is missing or has a typo
+
+Low match scores / no applications generated
+→ MIN_SCORE_TO_PROCESS is set to 40 by default
+→ If you want to process more jobs, lower it in main.py (line ~25)
+
+AITable API errors
+→ Check your AITABLE_API_TOKEN is correct
+→ Check all DST_ IDs are correct (copy from URL bar, start with dst)
+
+═══════════════════════════════════════════════════════════
+FILE STRUCTURE REFERENCE
+═══════════════════════════════════════════════════════════
+
+job-tracker/
+├── main.py                    ← Main script (runs daily)
+├── resume_extractor.py        ← Run once after uploading resume
+├── requirements.txt           ← Python dependencies
+├── .env.example               ← Template for your .env file
+├── .gitignore                 ← Keeps secrets out of git
+├── scrapers/
+│   ├── __init__.py            ← Orchestrates all scrapers
+│   ├── base.py                ← Base class all scrapers inherit
+│   ├── naukri.py              ← Naukri scraper
+│   ├── indeed.py              ← Indeed India scraper
+│   ├── linkedin.py            ← LinkedIn scraper
+│   ├── wellfound.py           ← Wellfound scraper
+│   ├── foundit.py             ← Foundit scraper
+│   └── custom_careers.py      ← Apna + Lever/Workable/Greenhouse/Generic
+├── ai_engine/
+│   └── claude_engine.py       ← All Claude AI calls
+├── generators/
+│   ├── pdf_resume.py          ← ATS PDF resume generator
+│   └── word_qa.py             ← Cover letter + Q&A Word doc generator
+├── utils/
+│   └── aitable_client.py      ← All AITable API read/write calls
+└── .github/
+    └── workflows/
+        └── job_tracker.yml    ← GitHub Actions schedule config
