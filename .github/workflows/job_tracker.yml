@@ -6,6 +6,11 @@ on:
     - cron: "30 8 * * *"    # 2:00 PM IST
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   run-job-tracker:
     runs-on: ubuntu-latest
@@ -36,6 +41,33 @@ jobs:
           DST_COMPANY_URLS: ${{ secrets.DST_COMPANY_URLS }}
           DST_JOB_TITLES: ${{ secrets.DST_JOB_TITLES }}
           DST_SEEN_JOBS: ${{ secrets.DST_SEEN_JOBS }}
+          EZSITE_API_TOKEN: ${{ secrets.EZSITE_API_TOKEN }}
+          EZSITE_RANDOM_CODE: 7iivmcizgxdr
+          EZSITE_TABLE_JOB_POSTINGS: 83374
+          EZSITE_TABLE_APPLICATIONS: 83375
+          EZSITE_TABLE_COMPANY_URLS: 83376
           SEARCH_LOCATION: India
           MAX_JOBS_PER_TITLE_PER_BOARD: 5
         run: python main.py
+
+      - name: Generate dashboard
+        env:
+          AITABLE_API_TOKEN: ${{ secrets.AITABLE_API_TOKEN }}
+          DST_JOB_POSTINGS: ${{ secrets.DST_JOB_POSTINGS }}
+          DST_APPLICATIONS: ${{ secrets.DST_APPLICATIONS }}
+        run: |
+          python -c "
+          import os
+          from dotenv import load_dotenv
+          load_dotenv()
+          from dashboard.generator import generate_dashboard
+          generate_dashboard()
+          "
+
+      - name: Deploy dashboard to GitHub Pages
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add docs/
+          git diff --staged --quiet || git commit -m "Update dashboard [$(date '+%Y-%m-%d %H:%M')]"
+          git push origin main
