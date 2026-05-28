@@ -16,7 +16,7 @@ import anthropic
 logger = logging.getLogger(__name__)
 
 client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-MODEL = "claude-sonnet-4-20250514"
+MODEL = "claude-sonnet-4-5"
 
 
 def _call(system: str, user: str, max_tokens: int = 2000) -> str:
