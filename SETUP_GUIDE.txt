@@ -1,4 +1,4 @@
-# Job Tracker — Complete Setup Guide
+# Job Tracker — Complete Setup Guide -
 # Follow these steps in order. Takes about 30–45 minutes total.
 
 ═══════════════════════════════════════════════════════════
