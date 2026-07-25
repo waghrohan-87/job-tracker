@@ -94,10 +94,10 @@
 <nav>
   <div class="brand">🎯 Job Tracker</div>
   <div class="tabs">
-    <button class="tab active" onclick="showPage('new-jobs')">New Jobs <span style="background:#ef4444;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">32</span></button>
-    <button class="tab" onclick="showPage('applied-jobs')">Applied Jobs <span style="background:#6b7280;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">22</span></button>
+    <button class="tab active" onclick="showPage('new-jobs')">New Jobs <span style="background:#ef4444;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">0</span></button>
+    <button class="tab" onclick="showPage('applied-jobs')">Applied Jobs <span style="background:#6b7280;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">0</span></button>
   </div>
-  <div class="updated">Last updated: 24 Jul 2026, 09:43 PM IST</div>
+  <div class="updated">Last updated: 25 Jul 2026, 10:19 AM IST</div>
 </nav>
 
 <div class="container">
@@ -110,24 +110,24 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">32</div><div class="label">New Jobs</div></div>
-      <div class="stat"><div class="num">8</div><div class="label">Strong Match (≥70)</div></div>
-      <div class="stat"><div class="num">8</div><div class="label">Good Match (50-69)</div></div>
-      <div class="stat"><div class="num">2</div><div class="label">Job Boards</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">New Jobs</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">Strong Match (≥70)</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">Good Match (50-69)</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">Job Boards</div></div>
     </div>
 
     <div class="toolbar">
       <input type="text" id="jobs-search" placeholder="Search by title or company..." oninput="filterJobs()">
       <select id="jobs-board-filter" onchange="filterJobs()">
         <option value="">All Job Boards</option>
-        <option value="LinkedIn">LinkedIn</option>
+        
       </select>
       <select id="jobs-score-filter" onchange="filterJobs()">
         <option value="">All Scores</option>
         <option value="70">Strong Match (≥70)</option>
         <option value="50">Good Match (≥50)</option>
       </select>
-      <span class="count-label" id="jobs-count">32 jobs</span>
+      <span class="count-label" id="jobs-count">0 jobs</span>
     </div>
 
     <div class="table-wrap">
@@ -143,265 +143,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr data-board="LinkedIn" data-score="42">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'favicon': ''}" target="_blank" rel="noopener">Assistant Manager - Product Support</a></div><div class="company">Swiggy</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">42</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">CAST</div></td>
-          <td style="color:#555;font-size:12px">Greater Bengaluru Area</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="68">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">BiteSpeed</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">68</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="88">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">Sakon</div></td>
-          <td style="color:#555;font-size:12px">Pune District, Maharashtra, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">88</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'text': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'favicon': ''}" target="_blank" rel="noopener">Success Manager (Digital)</a></div><div class="company">Sprinklr</div></td>
-          <td style="color:#555;font-size:12px">Gurgaon, Haryana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'text': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="58">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'text': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'favicon': ''}" target="_blank" rel="noopener">Scaled Customer Success Manager</a></div><div class="company">Fello</div></td>
-          <td style="color:#555;font-size:12px">India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'text': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="58">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager (D&I - India)</a></div><div class="company">Planet</div></td>
-          <td style="color:#555;font-size:12px">India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Zluri</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="45">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'text': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'favicon': ''}" target="_blank" rel="noopener">Escalation Manager</a></div><div class="company">Ather Energy</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">45</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'text': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="68">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'text': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'favicon': ''}" target="_blank" rel="noopener">Director of Customer Success</a></div><div class="company">WhiteSlips Job Management Consultants</div></td>
-          <td style="color:#555;font-size:12px">India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">68</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'text': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="18">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'text': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'favicon': ''}" target="_blank" rel="noopener">Customer Relationship Manager</a></div><div class="company">Reliance Retail</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">18</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'text': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'favicon': ''}" target="_blank" rel="noopener">Customer Service Manager or Analyst</a></div><div class="company">HRM Counsel</div></td>
-          <td style="color:#555;font-size:12px">India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="58">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'favicon': ''}" target="_blank" rel="noopener">Assistant Manager- CRM Delivery</a></div><div class="company">IBM</div></td>
-          <td style="color:#555;font-size:12px">Gurgaon, Haryana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="28">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'text': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Client Partner</a></div><div class="company">JioStar</div></td>
-          <td style="color:#555;font-size:12px">Gurugram, Haryana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">28</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'text': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="58">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'text': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Strategic Partnerships (AI-Led Payments)</a></div><div class="company">Pine Labs</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'text': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="28">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'text': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Affluent Relations</a></div><div class="company">Standard Chartered India</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru East, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">28</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'text': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="34">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'text': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'favicon': ''}" target="_blank" rel="noopener">Director - Data Operations</a></div><div class="company">Sanofi</div></td>
-          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">34</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'text': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px">Greater Chennai Area</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="78">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px">Chennai, Tamil Nadu, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge green">78</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="48">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'text': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'favicon': ''}" target="_blank" rel="noopener">Country Manager - Customer Success / Sales</a></div><div class="company">ETP Group</div></td>
-          <td style="color:#555;font-size:12px">Mumbai, Maharashtra, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">48</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'text': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="28">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager (WFH)</a></div><div class="company">Woomly</div></td>
-          <td style="color:#555;font-size:12px">Gurugram, Haryana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">28</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="35">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'favicon': ''}" target="_blank" rel="noopener">Customer Service Manager-Support (Oracle Hospitality Domain Exp only)</a></div><div class="company">Oracle</div></td>
-          <td style="color:#555;font-size:12px">Noida, Uttar Pradesh, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">35</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="58">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'text': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'favicon': ''}" target="_blank" rel="noopener">Senior Manager, Customer Support</a></div><div class="company">Bluevine</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'text': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="18">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'text': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'favicon': ''}" target="_blank" rel="noopener">欧洲区销售总监</a></div><div class="company">Wanfeng Auto Holding Group Co. Ltd</div></td>
-          <td style="color:#555;font-size:12px">Anupgarh, Rajasthan, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">18</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'text': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="28">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'text': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'favicon': ''}" target="_blank" rel="noopener">Director - Insurance Operations (P&C/ L&A)</a></div><div class="company">Credence HR Services</div></td>
-          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">28</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'text': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="28">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'text': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'favicon': ''}" target="_blank" rel="noopener">Senior Account Director, SpringServe, India</a></div><div class="company">Magnite</div></td>
-          <td style="color:#555;font-size:12px">Mumbai Metropolitan Region</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">28</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'text': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="68">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager, US, RBS - Strategic Account Services</a></div><div class="company">Amazon</div></td>
-          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge yellow">68</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="LinkedIn" data-score="18">
-          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'text': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'favicon': ''}" target="_blank" rel="noopener">Sales Director</a></div><div class="company">Fission Labs</div></td>
-          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
-          <td><span class="badge grey">LinkedIn</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
-          <td><span class="badge red">18</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'text': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr data-board="—" data-score="0">
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px">—</td>
-          <td><span class="badge grey">—</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">No link</span></td>
-        </tr>
-<tr data-board="—" data-score="0">
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px">—</td>
-          <td><span class="badge grey">—</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">No link</span></td>
-        </tr>
-<tr data-board="—" data-score="0">
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px">—</td>
-          <td><span class="badge grey">—</span></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">No link</span></td>
-        </tr>
+          
         </tbody>
       </table>
-      
+      <div class="empty"><div class="icon">📭</div><p><strong>No new jobs found</strong><br>Run the scraper or check back later</p></div>
     </div>
   </div>
 
@@ -413,15 +158,15 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">22</div><div class="label">Total Applications</div></div>
-      <div class="stat"><div class="num">8</div><div class="label">Strong Match</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">Total Applications</div></div>
+      <div class="stat"><div class="num">0</div><div class="label">Strong Match</div></div>
       <div class="stat"><div class="num">0</div><div class="label">Applied</div></div>
       <div class="stat"><div class="num">0</div><div class="label">Interviews</div></div>
     </div>
 
     <div class="toolbar">
       <input type="text" id="apps-search" placeholder="Search by title or company..." oninput="filterApps()">
-      <span class="count-label" id="apps-count">22 applications</span>
+      <span class="count-label" id="apps-count">0 applications</span>
     </div>
 
     <div class="table-wrap">
@@ -437,185 +182,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-        </tr>
-<tr>
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-        </tr>
-<tr>
-          <td><div class="job-title">—</div><div class="company">—</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">0</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><span style="color:#ccc;font-size:12px">—</span></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Assistant Manager - Product Support</div><div class="company">Swiggy</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">42</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Assistant Manager - Product Support', 'Swiggy', 'Subject: AM – Product Support | Rohan Wagh\n\nHi,\n\nI saw the Assistant Manager role and it honestly feels like a good match — I\'ve spent the last decade managing teams and solving customer problems in pretty high-pressure environments.\n\nI\'ve led teams handling enterprise escalations and L1/L2 support across SaaS implementations, so managing 8+ agents through shifts and SLAs isn\'t new to me. At Avoma, I ran onboarding for 150+ customers and built structured rollout plans — similar energy to what you\'re describing here: balancing metrics, processes, and actually keeping people engaged. I\'m comfortable living in dashboards, spotting performance gaps early, and putting plans in place that don\'t just react but prevent.\n\nThe "Voice of Brands" piece resonates. In past roles, I\'ve been the bridge between customers, product, warehouse ops, and engineering teams — translating chaos into action. I\'ve done discovery workshops, written SOPs, handled escalations that were about to blow up, and made sure nothing fell through the cracks when multiple teams were involved.\n\nI\'m used to 24/7 support cycles, cross-functional firefighting, and being accountable when things go sideways. Swiggy\'s pace doesn\'t scare me — I\'ve worked in environments where "fast" was the baseline.\n\nWould love to chat.\n\nBest,  \nRohan Wagh  \n+91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Success Manager</div><div class="company">CAST</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Success Manager', 'CAST', 'Subject: CSM role at CAST\n\nHi,\n\nI\'ve spent the last decade helping enterprises actually *use* the tech they bought — usually because someone sold them on transformation, but left a gap between the software and the outcomes.\n\nThat\'s exactly the space CAST plays in. Your 3D source code maps and portfolio intelligence aren\'t widgets; they\'re strategic inputs for modernization, cloud migration, and tech debt conversations that most orgs struggle to even frame. I\'ve led those conversations — at the exec level and in the weeds with engineers — and I know how to tie platform value to what a CIO is trying to report to the board.\n\nAt Ascendion, I led enterprise AI rollouts by running discovery workshops, mapping dependencies, and co-creating roadmaps that actually held up. At Avoma, I onboarded 150+ customers by diagnosing their broken workflows first, not just demoing features. I\'m used to working in environments where the buyer and the user aren\'t the same person — and where adoption is earned, not assumed.\n\nI\'m technical enough to credibly engage with engineering teams but commercial enough to turn usage into expansion and case studies. And I like the messy middle of implementation where most CSMs check out.\n\nHappy to talk through how I\'d approach the SI-facing play you\'re building.\n\nBest,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Success Manager</div><div class="company">BiteSpeed</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">68</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Success Manager', 'BiteSpeed', '**Re: Customer Success Manager role**\n\nHey,\n\nI saw your opening for a Customer Success Manager and wanted to reach out. I\'ve spent the last 10+ years in customer success and technical program roles, mostly working with SaaS companies — so helping e-commerce brands nail their marketing and support workflows actually sounds like a great fit.\n\nA few things stood out to me about BiteSpeed: you\'re founder-led on CS right now, you\'ve got net negative churn (that\'s rare), and you\'re scaling fast. I\'ve been in similar spots before. At Avoma, I led onboarding for 150+ enterprise customers and built out adoption strategies when things were moving quickly. At Ascendion, I owned enterprise implementations end-to-end — discovery workshops, stakeholder alignment, escalations, the whole thing.\n\nWhat I\'m good at: turning customers into actual fans, not just retained accounts. I listen, I find the gaps, and I make sure people feel like they\'re getting value — not just software. I also don\'t mind getting technical when needed and partnering with product teams to loop feedback back in.\n\nWould love to chat more about how you\'re thinking about scaling CS as you grow.\n\nThanks,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Success Manager</div><div class="company">Sakon</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">85</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Success Manager', 'Sakon', 'Subject: Customer Success Manager – Rohan Wagh\n\nHi Satyam,\n\nI saw the CSM role at Sakon and wanted to reach out. I\'m currently working with enterprise customers at Ascendion, leading implementations and managing the full lifecycle — from discovery workshops through adoption and escalations. Before that, I ran onboarding programs for 150+ SaaS customers at Avoma, which included building success plans, tracking health metrics, and working closely with account teams on expansion.\n\nA few things stood out to me about this role. I\'ve spent the last few years doing QBRs, managing at-risk accounts, and partnering with cross-functional teams to hit adoption and retention goals. I\'m comfortable working US hours (been doing it for a while now), and I already use tools like Salesforce and Gainsight day-to-day.\n\nI\'m based in Bangalore but can easily relocate to Pune or work hybrid. What resonates most is the customer-first, outcome-driven focus you mentioned — that\'s honestly what keeps me in this space.\n\nWould love to chat about how I can contribute. Happy to share more context or walk through specific examples if helpful.\n\nThanks,  \nRohan Wagh  \nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Success Manager (Digital)</div><div class="company">Sprinklr</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Success Manager (Digital)', 'Sprinklr', 'Subject: Digital Success Manager — a natural fit for how I work\n\nHey,\n\nI\'ve spent the last few years doing what this role basically describes — just without always calling it "digital success." At Avoma, I onboarded 150+ customers using phased rollout plans and adoption strategies. At Ascendion, I built implementation roadmaps and monitored customer outcomes through data. The thing is, doing that one-to-one doesn\'t scale. I figured that out pretty quickly.\n\nThat\'s why I\'m genuinely interested in this. Using automation, in-product messaging, and self-service resources to guide hundreds of customers through their lifecycle — that makes way more sense than trying to manually handhold everyone. I\'ve already been using tools like Gainsight and running discovery workshops to spot risks and upsell signals. I just want to do it at real scale, the way Sprinklr\'s tech-touch model is built.\n\nI also appreciate that the role isn\'t just "send emails and hope." It\'s about designing digital programs that actually work — automated onboarding, targeted campaigns, analytics-driven intervention. That\'s the kind of structured, measurable approach I\'ve been doing in enterprise environments, just applied differently.\n\nI\'m based in Bangalore, so timezone-wise it works. And honestly, the idea of managing customer success through smart systems instead of constant calls sounds like the right evolution.\n\nLet me know if it\'s worth talking.\n\nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'text': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Scaled Customer Success Manager</div><div class="company">Fello</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Scaled Customer Success Manager', 'Fello', 'Subject: Let\'s talk about scaling CS at Fello\n\nHey Fello team,\n\nI spent the last year onboarding 150+ mid-market and enterprise customers — mostly through structured campaigns, templated playbooks, and a lot of trial and error on what actually gets people to activate. Before that, I led implementation programs for AI workflow tools, which taught me the hard way that if onboarding isn\'t frictionless, customers just... don\'t do it.\n\nWhat caught my eye about this role is that you\'re building a scaled motion from scratch. I\'ve done that before — specifically around digital onboarding journeys and lifecycle campaigns using tools like Gainsight and HubSpot. I also understand product usage signals well enough to know when someone\'s stuck vs. when they\'re just slow to ramp.\n\nI\'m comfortable living in data, running experiments, and iterating quickly. I know how to design programs that work for hundreds of users at once, not just one white-glove account. And honestly, I like that kind of work more — there\'s something satisfying about building systems that just *run*.\n\nWould love to chat about how you\'re thinking about your scaled CS strategy and where I might plug in.\n\nThanks,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'text': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Success Manager (D&I - India)</div><div class="company">Planet</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Success Manager (D&I - India)', 'Planet', 'Subject: Rohan Wagh — CSM Application for India Role\n\nHey Planet team,\n\nI saw the India Customer Success Manager opening and honestly, it hit close to home. I\'ve spent the last decade managing complex rollouts and building trust with enterprise clients — often in situations where multiple stakeholders, technical dependencies, and long timelines made things messy.\n\nWhat stood out to me: you need someone who can navigate government structures and own the full customer lifecycle. I\'ve led implementations for 150+ enterprise accounts, run discovery workshops to unpack technical and operational requirements, and handled escalations when things don\'t go smoothly. I\'m comfortable in the middle of complexity — whether that\'s aligning internal teams or keeping customers confident during uncertain phases.\n\nI\'m based in Bangalore, understand the regional context, and genuinely think geospatial data solving real-world problems is cooler than most SaaS products I\'ve worked on. The mix of hardware, satellites, and software at Planet sounds like the kind of challenge I\'d want to wake up for.\n\nI\'d love to talk more about how my background in customer success and technical program management could translate to supporting military and government clients in India.\n\nThanks for considering,  \nRohan Wagh  \nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Senior Customer Success Manager</div><div class="company">Zluri</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Senior Customer Success Manager', 'Zluri', 'Subject: Re: Senior CSM at Zluri (PST shift ready)\n\nHey,\n\nI saw the Senior CSM role and honestly, the timing\'s kind of perfect — I\'ve spent the last couple years leading enterprise implementations that look a lot like what you\'re describing, just in different domains.\n\nAt Ascendion, I led end-to-end rollouts of enterprise AI workflow solutions. That meant discovery workshops to map out requirements, building implementation roadmaps with engineering and business teams, and managing the whole thing from kickoff to production. At Avoma before that, I onboarded 150+ enterprise customers, which taught me how to scale while still making it feel custom.\n\nWhat caught my attention about Zluri is the identity governance piece in an AI-first world — that\'s genuinely interesting, not just another SaaS play. I\'ve done the CSM thing where you\'re half solutions architect, half trusted advisor, and I\'m comfortable in both modes. I don\'t have identity security on my resume yet, but I learn infrastructure domains quickly and I\'m good at translating technical complexity for executives.\n\nI\'m in Bangalore and totally fine with PST hours. I\'ve worked odd shifts before and it\'s not an issue.\n\nWould love to chat about how you\'re thinking about this role.\n\nRohan  \nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Escalation Manager</div><div class="company">Ather Energy</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">45</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Escalation Manager', 'Ather Energy', 'Subject: Re: Escalations Team Lead role\n\nHey,\n\nI saw the posting for the Escalations Team Lead position and thought it might be a good fit given what I\'ve been doing lately.\n\nI\'ve spent the last few years managing enterprise customer implementations and escalations across SaaS environments — mostly on the technical side, but dealing with high-stakes situations where things need to move fast and teams need to stay aligned. At Ascendion, I run point on managing customer escalations and cross-functional issue resolution when projects hit blockers. It\'s about getting the right people in the room, not letting things sit, and actually closing loops.\n\nBefore that at Avoma, I was running onboarding programs for 150+ customers at once, which meant a lot of workforce planning, performance tracking, and making sure nothing fell through the cracks. I\'m comfortable with Salesforce, building dashboards, and working backwards from trends to find what\'s actually breaking.\n\nI haven\'t led a dedicated escalations team before, but I\'ve definitely been in the middle of managing critical customer issues while juggling internal dependencies — which sounds like a lot of what this role is. I like the idea of being closer to the customer support side vs. purely implementation.\n\nHappy to chat more if it makes sense.\n\nThanks,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'text': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Director of Customer Success</div><div class="company">WhiteSlips Job Management Consultants</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">68</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Director of Customer Success', 'WhiteSlips Job Management Consultants', 'Subject: Director of Customer Success — WhiteSlips\n\nHi there,\n\nI\'ve spent the last decade building customer success programs from the ground up — and I\'ve learned that scaling CS across different markets isn\'t about copy-pasting a playbook. It\'s about building the right structure while staying close enough to customers that you actually know what\'s broken before they tell you.\n\nAt Ascendion, I led enterprise implementations for AI workflow solutions, which meant translating complex tech into something customers could actually use and see value from quickly. I ran discovery workshops, built rollout roadmaps with product and engineering teams, and made sure customer feedback wasn\'t just heard — it shaped what we built next. That loop between customer insight and product direction is something I care a lot about.\n\nI\'ve also scaled onboarding programs at Avoma for 150+ enterprise and mid-market customers. Different segments, different needs, same goal: get them to value fast and keep them there. I\'m comfortable leading global teams, managing escalations that need senior attention, and building the operations layer that lets CS actually scale without falling apart.\n\nI\'m based in Bangalore and used to working across time zones. Would love to talk about how I can help WhiteSlips build a CS function that grows with you.\n\nBest,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'text': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Service Manager or Analyst</div><div class="company">HRM Counsel</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Service Manager or Analyst', 'HRM Counsel', 'I saw the Customer Service Manager opening at HRM Counsel and thought it lined up well with what I\'ve been doing — just from a different angle.\n\nI\'ve spent the last 10+ years managing enterprise customer programs at scale. At Ascendion, I led implementations for large clients, which meant a lot of stakeholder discovery, coordinating with teams, managing escalations when things went sideways, and making sure customers actually got value from what we delivered. At Avoma, I ran onboarding for 150+ enterprise accounts — not frontline calls, but the planning, documentation, and process side of keeping customers satisfied.\n\nI\'ve built onboarding programs from scratch, tracked satisfaction metrics, and developed playbooks that work across different customer types. I\'m comfortable with CRMs (Salesforce, HubSpot, Gainsight), reporting on what\'s working and what\'s not, and working cross-functionally to solve problems before they escalate.\n\nI know I\'m coming from SaaS rather than traditional customer service, but honestly — the job is about understanding what customers need, building systems that deliver, and leading teams to execute. That part I\'ve done plenty of.\n\nHappy to chat more if you think this experience translates for what you\'re building.\n\nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Assistant Manager- CRM Delivery</div><div class="company">IBM</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Assistant Manager- CRM Delivery', 'IBM', 'Hi —\n\nI noticed the IBM CRM Delivery role and wanted to reach out. Over the past decade, I\'ve been on the customer side of the equation — leading implementations, managing enterprise onboarding programs, and handling escalations when things aren\'t going to plan. This role feels like a good next step where I can bring that perspective into operational leadership.\n\nI\'ve spent years partnering with cross-functional teams to hit SLAs and navigate complex customer situations under pressure. At Ascendion, I managed enterprise rollouts where stakeholder alignment and timely resolution were non-negotiable — similar energy to what you\'re describing here. I\'ve also coached teams through process gaps and built frameworks to track what\'s actually working (and what isn\'t).\n\nThe client engagement piece stands out to me. I\'ve led discovery sessions and stakeholder reviews at various levels, so I\'m comfortable having those performance conversations and translating customer feedback into action.\n\nI know my background isn\'t traditional BPO, but the fundamentals are there — delivery accountability, escalation handling, people development, and a strong bias toward fixing what\'s broken. Happy to discuss how that maps to what IBM\'s looking for.\n\nBest,  \nRohan Wagh  \nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Associate Director - Strategic Partnerships (AI-Led Payments)</div><div class="company">Pine Labs</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">45</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Associate Director - Strategic Partnerships (AI-Led Payments)', 'Pine Labs', 'Subject: Your Associate Director role — from AI workflows to AI-powered commerce\n\nHi,\n\nI saw the Associate Director opening at Pine Labs and it caught my attention. I\'ve been working pretty closely with enterprise AI adoption over the last year, and the "translate AI capabilities into business value" part of this role feels like a natural next step.\n\nRight now at Ascendion, I lead implementations of enterprise AI workflow solutions—lots of discovery workshops, translating technical features into outcomes clients actually care about, and managing the messy middle between what the product can do and what the customer needs to believe in. Before that, I onboarded 150+ companies at Avoma into AI-driven tools, which taught me how to scale enablement without losing the narrative.\n\nWhat I don\'t have yet is payments domain depth. But I do know how to walk into a room with a CXO, understand their workflow pain, and co-create a story around emerging tech that hasn\'t fully proven itself yet. That\'s basically what I\'ve been doing — just swap "agentic commerce" for "intelligent automation."\n\nI\'m in Bangalore, love ambiguous problems, and I\'m genuinely curious about what you\'re building in the AI-led payments space. Would be happy to chat about how my background might fit what you\'re trying to do.\n\nThanks,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'text': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Senior Customer Success Manager</div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Senior Customer Success Manager', 'Genesys', 'Subject: Your next Senior CSM — someone who actually gets enterprise customer success\n\nHey there,\n\nI\'ve been building onboarding programs and managing customer rollouts for 10+ years — mostly in SaaS environments where getting customers to "go live" is just the beginning of the real work.\n\nAt Ascendion, I led enterprise implementations of AI workflow solutions. That meant discovery workshops, building rollout roadmaps with cross-functional teams, and constantly translating between what customers *thought* they wanted and what would actually drive their KPIs. At Avoma, I ran onboarding for 150+ accounts — lots of moving parts, lots of different maturity levels.\n\nWhat stood out to me about this role is the emphasis on lifelong relationships and orchestrating adoption. That\'s the part I\'m best at. I don\'t just hand off a playbook — I stay close, adjust strategy when things shift, and pull in the right people at the right time. I\'m comfortable being the single point of contact who customers actually trust to tell them the truth.\n\nI\'m in Bangalore, know Salesforce and Gainsight well, and I\'m used to working with global teams across time zones.\n\nWould love to chat about how I could help Genesys customers actually realize their CX vision — not just renew.\n\nThanks for reading,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Senior Customer Success Manager</div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Senior Customer Success Manager', 'Genesys', 'Subject: Senior CSM Role — Rohan Wagh\n\nHi,\n\nI\'ve spent the last decade managing enterprise customer implementations and building onboarding programs that actually stick. When I saw the Senior CSM role at Genesys, it felt like the right next step — especially the focus on building lifelong relationships and helping customers realize their CX vision.\n\nAt Ascendion, I led enterprise AI workflow rollouts where the core work was discovery, defining roadmaps, and managing the inevitable escalations that come with complex deployments. That mirrors a lot of what you\'re looking for here: understanding customer KPIs, building success plans, and orchestrating the right strategies to drive adoption and retention. At Avoma, I worked with 150+ enterprise customers on structured onboarding, which taught me how to scale customer success without losing the personal touch.\n\nI\'m comfortable being the advocate in the middle — coordinating across product, engineering, and business teams while keeping the customer outcome front and center. I get that adoption doesn\'t happen by itself; it takes intentional planning, regular check-ins, and knowing when to pivot.\n\nI\'m in Bangalore and would love to chat more about how I can contribute to the team.\n\nThanks,  \nRohan  \nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Senior Customer Success Manager</div><div class="company">Genesys</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge green">78</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Senior Customer Success Manager', 'Genesys', 'Subject: Senior CSM role at Genesys\n\nHi,\n\nI\'ve spent the last decade figuring out how to make enterprise software implementations *actually* work for customers — not just get deployed, but deliver on what they were sold. That\'s what caught my attention about this role.\n\nAt Ascendion, I led rollouts of AI workflow solutions for large enterprises. That meant running discovery workshops to understand what customers actually needed (vs. what they thought they needed), building out implementation roadmaps with business and eng teams, and managing the inevitable escalations and risks along the way. I\'ve done this at scale too — onboarded 150+ enterprise accounts at Avoma, where I had to balance the "high-touch relationship building" thing with building processes that could actually scale.\n\nThe "lifelong relationship" piece in your description resonated. I\'ve seen what happens when CSMs disappear after go-live, and I\'ve also seen how much easier renewal conversations are when you\'ve been genuinely helping someone hit their KPIs all year. I use Gainsight and Salesforce to stay on top of customer health, but honestly the best signal is just... talking to people regularly.\n\nI\'m in Bangalore, comfortable with the customer advocate role, and legitimately interested in CX platforms — especially ones trying to do orchestration at scale.\n\nHappy to chat about how I\'d approach the portfolio.\n\nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Country Manager - Customer Success / Sales</div><div class="company">ETP Group</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">38</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Country Manager - Customer Success / Sales', 'ETP Group', 'Subject: Country Manager role – enterprise client experience with SAP partners\n\nHi,\n\nI noticed you\'re looking for someone from the SAP partner ecosystem with experience selling into enterprise retail and manufacturing. That\'s where I\'ve spent most of my career, just from the other side of the table.\n\nI\'ve led enterprise implementations and onboarding programs for 10+ years across SaaS platforms — managing CXO relationships, conducting discovery workshops, handling escalations, and building rollout strategies for large accounts. At Ascendion, I owned end-to-end delivery of AI workflow solutions for enterprise customers, which meant managing the full lifecycle from discovery to production deployment.\n\nWhat stands out to me about ETP is the omni-channel focus. I\'ve worked closely with customers navigating digital transformation, especially around workflow integration and adoption at scale. I understand the complexity of aligning product roadmaps with customer goals — and how critical it is to maintain trust when things get messy.\n\nI haven\'t sold software directly, but I\'ve owned customer success in environments where retention, expansion, and stakeholder management were the real revenue drivers. I\'m used to being the single point of contact for strategic accounts and know how to navigate cross-functional teams to get things done.\n\nI\'m based in Bangalore but open to relocating for the right role. Happy to discuss how my background might translate.\n\nThanks,\nRohan Wagh\nrohan.wagh@hotmail.com | +91 7507724281')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'text': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Senior Manager, Customer Support</div><div class="company">Bluevine</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge red">45</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Senior Manager, Customer Support', 'Bluevine', 'Subject: Senior Manager role — leading support teams that actually deliver\n\nHey,\n\nI saw the Senior Manager, Customer Support opening and wanted to reach out. I\'ve spent the last decade leading customer-facing teams in fast-paced SaaS environments — mostly onboarding and enterprise implementations, but the core challenges are pretty similar: managing escalations, keeping metrics on track, and making sure teams actually deliver when it matters.\n\nAt Ascendion, I led cross-functional delivery for enterprise customers — managing timelines, coordinating with engineering and business teams, and handling escalations when things got messy. At Avoma, I built out onboarding programs for 150+ customers, which meant creating scalable processes, tracking outcomes, and constantly refining what worked. I\'m comfortable owning performance across teams and partnering with leadership in different time zones (I\'ve done plenty of US-India coordination).\n\nWhat stands out about Bluevine is the small business focus. I actually think that\'s harder than enterprise in some ways — higher volume, less patience for friction, and every interaction really matters. The idea of co-leading India operations while staying tightly aligned with global standards sounds like the right kind of challenge.\n\nI\'d love to talk more about how you\'re thinking about this role and where you need the most immediate impact.\n\nThanks,\nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'text': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
-<tr>
-          <td><div class="job-title">Customer Success Manager, US, RBS - Strategic Account Services</div><div class="company">Amazon</div></td>
-          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
-          <td><span class="badge yellow">58</span></td>
-          <td><button class="btn btn-outline" onclick="showCoverLetter('Customer Success Manager, US, RBS - Strategic Account Services', 'Amazon', 'Here\'s a cover letter:\n\n---\n\nHi—\n\nI saw this CSM role with RBS and it honestly feels like a good match for where I\'ve been and what I\'ve been building toward.\n\nOver the past few years, I\'ve worked with 150+ mid-market and enterprise accounts across onboarding, adoption, and growth—a lot of that through pooled support and scaled delivery models. At Avoma, I ran phased rollout plans and used data to spot blockers before they became problems. At Ascendion, I led discovery workshops and managed cross-functional escalations with business and engineering teams. So the core elements here—supporting a portfolio, data-driven advising, helping businesses grow through structured guidance—are pretty familiar territory.\n\nWhat stands out to me about this role is the focus on helping emerging sellers master the fundamentals fast. I\'ve always found that early-stage growth is where you can have the most tangible impact, and I like the idea of working at scale while still delivering real value per account.\n\nI\'m already based in Bengaluru, and the shift timing works for me. I\'d love to talk more about how I can contribute to the SAS Select team.\n\nThanks,  \nRohan')">View</button></td>
-          <td><span class="badge grey">Pending</span></td>
-          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'favicon': ''}" target="_blank" class="btn btn-primary">Apply →</a></td>
-        </tr>
+          
         </tbody>
       </table>
-      
+      <div class="empty"><div class="icon">📭</div><p><strong>No applications yet</strong><br>Applications appear here after the AI processes new jobs</p></div>
     </div>
   </div>
 
