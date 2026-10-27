@@ -94,10 +94,10 @@
 <nav>
   <div class="brand">🎯 Job Tracker</div>
   <div class="tabs">
-    <button class="tab active" onclick="showPage('new-jobs')">New Jobs <span style="background:#ef4444;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">0</span></button>
+    <button class="tab active" onclick="showPage('new-jobs')">New Jobs <span style="background:#ef4444;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">32</span></button>
     <button class="tab" onclick="showPage('applied-jobs')">Applied Jobs <span style="background:#6b7280;color:#fff;border-radius:10px;padding:1px 7px;font-size:11px;margin-left:4px;">22</span></button>
   </div>
-  <div class="updated">Last updated: 27 Oct 2026, 12:13 AM IST</div>
+  <div class="updated">Last updated: 27 Oct 2026, 03:01 PM IST</div>
 </nav>
 
 <div class="container">
@@ -110,24 +110,24 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">0</div><div class="label">New Jobs</div></div>
-      <div class="stat"><div class="num">0</div><div class="label">Strong Match (≥70)</div></div>
-      <div class="stat"><div class="num">0</div><div class="label">Good Match (50-69)</div></div>
-      <div class="stat"><div class="num">0</div><div class="label">Job Boards</div></div>
+      <div class="stat"><div class="num">32</div><div class="label">New Jobs</div></div>
+      <div class="stat"><div class="num">8</div><div class="label">Strong Match (≥70)</div></div>
+      <div class="stat"><div class="num">8</div><div class="label">Good Match (50-69)</div></div>
+      <div class="stat"><div class="num">2</div><div class="label">Job Boards</div></div>
     </div>
 
     <div class="toolbar">
       <input type="text" id="jobs-search" placeholder="Search by title or company..." oninput="filterJobs()">
       <select id="jobs-board-filter" onchange="filterJobs()">
         <option value="">All Job Boards</option>
-        
+        <option value="LinkedIn">LinkedIn</option>
       </select>
       <select id="jobs-score-filter" onchange="filterJobs()">
         <option value="">All Scores</option>
         <option value="70">Strong Match (≥70)</option>
         <option value="50">Good Match (≥50)</option>
       </select>
-      <span class="count-label" id="jobs-count">0 jobs</span>
+      <span class="count-label" id="jobs-count">32 jobs</span>
     </div>
 
     <div class="table-wrap">
@@ -143,10 +143,265 @@
           </tr>
         </thead>
         <tbody>
-          
+          <tr data-board="LinkedIn" data-score="42">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'favicon': ''}" target="_blank" rel="noopener">Assistant Manager - Product Support</a></div><div class="company">Swiggy</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">42</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-product-support-at-swiggy-4418809590', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">CAST</div></td>
+          <td style="color:#555;font-size:12px">Greater Bengaluru Area</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-cast-4419839833', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="68">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">BiteSpeed</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">68</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-bitespeed-4408625767', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="88">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager</a></div><div class="company">Sakon</div></td>
+          <td style="color:#555;font-size:12px">Pune District, Maharashtra, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">88</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-at-sakon-4419027090', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'text': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'favicon': ''}" target="_blank" rel="noopener">Success Manager (Digital)</a></div><div class="company">Sprinklr</div></td>
+          <td style="color:#555;font-size:12px">Gurgaon, Haryana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'text': 'https://in.linkedin.com/jobs/view/success-manager-digital-at-sprinklr-4367120228', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="58">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'text': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'favicon': ''}" target="_blank" rel="noopener">Scaled Customer Success Manager</a></div><div class="company">Fello</div></td>
+          <td style="color:#555;font-size:12px">India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">58</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'text': 'https://in.linkedin.com/jobs/view/scaled-customer-success-manager-at-fello-4417244226', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="58">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager (D&I - India)</a></div><div class="company">Planet</div></td>
+          <td style="color:#555;font-size:12px">India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">58</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-d-i-india-at-planet-4402215842', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Zluri</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-zluri-4419843005', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="45">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'text': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'favicon': ''}" target="_blank" rel="noopener">Escalation Manager</a></div><div class="company">Ather Energy</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">45</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'text': 'https://in.linkedin.com/jobs/view/escalation-manager-at-ather-energy-4417203907', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="68">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'text': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'favicon': ''}" target="_blank" rel="noopener">Director of Customer Success</a></div><div class="company">WhiteSlips Job Management Consultants</div></td>
+          <td style="color:#555;font-size:12px">India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">68</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'text': 'https://in.linkedin.com/jobs/view/director-of-customer-success-at-whiteslips-job-management-consultants-4419871685', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="18">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'text': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'favicon': ''}" target="_blank" rel="noopener">Customer Relationship Manager</a></div><div class="company">Reliance Retail</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">18</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'text': 'https://in.linkedin.com/jobs/view/customer-relationship-manager-at-reliance-retail-4328758678', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'favicon': ''}" target="_blank" rel="noopener">Customer Service Manager or Analyst</a></div><div class="company">HRM Counsel</div></td>
+          <td style="color:#555;font-size:12px">India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-or-analyst-at-hrm-counsel-4419913295', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="58">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'favicon': ''}" target="_blank" rel="noopener">Assistant Manager- CRM Delivery</a></div><div class="company">IBM</div></td>
+          <td style="color:#555;font-size:12px">Gurgaon, Haryana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">58</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'text': 'https://in.linkedin.com/jobs/view/assistant-manager-crm-delivery-at-ibm-4375288933', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="28">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'text': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Client Partner</a></div><div class="company">JioStar</div></td>
+          <td style="color:#555;font-size:12px">Gurugram, Haryana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">28</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'text': 'https://in.linkedin.com/jobs/view/associate-director-client-partner-at-jiostar-4417209188', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="58">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'text': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Strategic Partnerships (AI-Led Payments)</a></div><div class="company">Pine Labs</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">58</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'text': 'https://in.linkedin.com/jobs/view/associate-director-strategic-partnerships-ai-led-payments-at-pine-labs-4417252526', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="28">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'text': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'favicon': ''}" target="_blank" rel="noopener">Associate Director - Affluent Relations</a></div><div class="company">Standard Chartered India</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru East, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">28</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'text': 'https://in.linkedin.com/jobs/view/associate-director-affluent-relations-at-standard-chartered-india-4418588600', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="34">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'text': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'favicon': ''}" target="_blank" rel="noopener">Director - Data Operations</a></div><div class="company">Sanofi</div></td>
+          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">34</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'text': 'https://in.linkedin.com/jobs/view/director-data-operations-at-sanofi-4419845251', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
+          <td style="color:#555;font-size:12px">Greater Chennai Area</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4377355808', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
+          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409942610', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="78">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'favicon': ''}" target="_blank" rel="noopener">Senior Customer Success Manager</a></div><div class="company">Genesys</div></td>
+          <td style="color:#555;font-size:12px">Chennai, Tamil Nadu, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge green">78</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'text': 'https://in.linkedin.com/jobs/view/senior-customer-success-manager-at-genesys-4409999009', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="48">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'text': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'favicon': ''}" target="_blank" rel="noopener">Country Manager - Customer Success / Sales</a></div><div class="company">ETP Group</div></td>
+          <td style="color:#555;font-size:12px">Mumbai, Maharashtra, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">48</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'text': 'https://in.linkedin.com/jobs/view/country-manager-customer-success-sales-at-etp-group-4419020255', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="28">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager (WFH)</a></div><div class="company">Woomly</div></td>
+          <td style="color:#555;font-size:12px">Gurugram, Haryana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">28</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-wfh-at-woomly-4419022814', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="35">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'favicon': ''}" target="_blank" rel="noopener">Customer Service Manager-Support (Oracle Hospitality Domain Exp only)</a></div><div class="company">Oracle</div></td>
+          <td style="color:#555;font-size:12px">Noida, Uttar Pradesh, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">35</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'text': 'https://in.linkedin.com/jobs/view/customer-service-manager-support-oracle-hospitality-domain-exp-only-at-oracle-4408467181', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="58">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'text': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'favicon': ''}" target="_blank" rel="noopener">Senior Manager, Customer Support</a></div><div class="company">Bluevine</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">58</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'text': 'https://in.linkedin.com/jobs/view/senior-manager-customer-support-at-bluevine-4402501256', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="18">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'text': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'favicon': ''}" target="_blank" rel="noopener">欧洲区销售总监</a></div><div class="company">Wanfeng Auto Holding Group Co. Ltd</div></td>
+          <td style="color:#555;font-size:12px">Anupgarh, Rajasthan, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">18</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'text': 'https://in.linkedin.com/jobs/view/%E6%AC%A7%E6%B4%B2%E5%8C%BA%E9%94%80%E5%94%AE%E6%80%BB%E7%9B%91-at-wanfeng-auto-holding-group-co-ltd-4418852404', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="28">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'text': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'favicon': ''}" target="_blank" rel="noopener">Director - Insurance Operations (P&C/ L&A)</a></div><div class="company">Credence HR Services</div></td>
+          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">28</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'text': 'https://in.linkedin.com/jobs/view/director-insurance-operations-p-c-l-a-at-credence-hr-services-4417612399', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="28">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'text': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'favicon': ''}" target="_blank" rel="noopener">Senior Account Director, SpringServe, India</a></div><div class="company">Magnite</div></td>
+          <td style="color:#555;font-size:12px">Mumbai Metropolitan Region</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">28</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'text': 'https://in.linkedin.com/jobs/view/senior-account-director-springserve-india-at-magnite-4409759215', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="68">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'favicon': ''}" target="_blank" rel="noopener">Customer Success Manager, US, RBS - Strategic Account Services</a></div><div class="company">Amazon</div></td>
+          <td style="color:#555;font-size:12px">Bengaluru, Karnataka, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge yellow">68</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'text': 'https://in.linkedin.com/jobs/view/customer-success-manager-us-rbs-strategic-account-services-at-amazon-4379949145', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="LinkedIn" data-score="18">
+          <td><div class="job-title"><a href="{'title': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'text': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'favicon': ''}" target="_blank" rel="noopener">Sales Director</a></div><div class="company">Fission Labs</div></td>
+          <td style="color:#555;font-size:12px">Hyderabad, Telangana, India</td>
+          <td><span class="badge grey">LinkedIn</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">1779926400000</td>
+          <td><span class="badge red">18</span></td>
+          <td><a href="{'title': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'text': 'https://in.linkedin.com/jobs/view/sales-director-at-fission-labs-4419019700', 'favicon': ''}" target="_blank" rel="noopener" class="btn btn-primary">Apply →</a></td>
+        </tr>
+<tr data-board="—" data-score="0">
+          <td><div class="job-title">—</div><div class="company">—</div></td>
+          <td style="color:#555;font-size:12px">—</td>
+          <td><span class="badge grey">—</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
+          <td><span class="badge red">0</span></td>
+          <td><span style="color:#ccc;font-size:12px">No link</span></td>
+        </tr>
+<tr data-board="—" data-score="0">
+          <td><div class="job-title">—</div><div class="company">—</div></td>
+          <td style="color:#555;font-size:12px">—</td>
+          <td><span class="badge grey">—</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
+          <td><span class="badge red">0</span></td>
+          <td><span style="color:#ccc;font-size:12px">No link</span></td>
+        </tr>
+<tr data-board="—" data-score="0">
+          <td><div class="job-title">—</div><div class="company">—</div></td>
+          <td style="color:#555;font-size:12px">—</td>
+          <td><span class="badge grey">—</span></td>
+          <td style="color:#555;font-size:12px;white-space:nowrap">—</td>
+          <td><span class="badge red">0</span></td>
+          <td><span style="color:#ccc;font-size:12px">No link</span></td>
+        </tr>
         </tbody>
       </table>
-      <div class="empty"><div class="icon">📭</div><p><strong>No new jobs found</strong><br>Run the scraper or check back later</p></div>
+      
     </div>
   </div>
 
